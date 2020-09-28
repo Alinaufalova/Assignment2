@@ -13,13 +13,14 @@ public class Main {
         ITManager manager = new ITManager("Morty", "it manager", 65 , employees);
 
         Employees employees = new Employees();
-        Employees.addEmployee(Sqwidward);
-        Employees.addEmployee(KarlikNos);
+        Employees.addEmployee(manager);
+        Employees.addEmployee(engineer);
+        Employees.addEmployee(analytic);
 
         Employees.printEmployee();
 
-        KarlikNos.work();
-        Employees.removeEmployee(KarlikNos);
+        analytic.work();
+        Employees.removeEmployee(manager);
     }
 }
 
